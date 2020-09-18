@@ -15,14 +15,13 @@ h1 {
   text-align: center;
 }
 section {
-  padding: 20px;
+  min-height: 100vh;
+  padding: 30px;
   width: 700px;
   max-width: 100%;
 }
-section:not(:last-child) {
-  margin-bottom: 20px;
-}
 .blocks {
+  place-content: center;
   display: grid;
   grid-auto-rows: 100px;
   grid-template-columns: repeat(auto-fill, minmax(0, 100px));
@@ -55,4 +54,23 @@ section:not(:last-child) {
 }
 .block:nth-child(6n) {
   background: #673ab7;
+}
+
+.overlap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlap-parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlap-child {
+  position: absolute;
+  width: 250px;
+  height: 250px;
 }
