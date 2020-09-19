@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Console - Message</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1 class="main-title">Console - Message</h1>
+    <section>
+      <h2>Filter</h2>
+      <span class="noise">
+        Noise on
+        <input type="checkbox" name="noise" id="noise" checked />
+      </span>
+      <h3>By pattern</h3>
+      在 Filter 輸入 /A[\s]/，濾掉 An 開頭的 Message。
+      <h3>By URL</h3>
+      在 Filter 輸入 -url:noise.js，把來自 noise.js 的 Message 濾掉。
+    </section>
+    記得把 Filter 清掉
+    <section>
+      <h2>
+        Console Settings
+      </h2>
+      <h3>Group similar</h3>
+      <code>for (let i = 10; i--;) console.log('similar');</code>
+      <button onclick="groupSimilar()">Execute!</button>
+      <h3>Evaluate triggers user activation</h3>
+      <code>window.open();</code>
+      <button id="openWindow1" onclick="openWindow(1)">Open in 1s</button>
+      <br />
+      <br />
+      <code>window.open();</code>
+      <button id="openWindow5" onclick="openWindow(5)">Open in 5s</button>
+      (Pop-up blocked!)
+      <h3>Hide network</h3>
+      <button onclick="fetch404()">Fetch for 404</button>
+      <h3>Preserve log</h3>
+      開啟 Preserve log 然後 <button onclick="reload()">Reload</button>
+      <h3>Selected context only</h3>
+      <iframe height="20" src="./iframe.html" frameborder="0"></iframe>
+    </section>
+    <script src="noise.js"></script>
+  </body>
+</html>
