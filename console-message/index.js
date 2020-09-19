@@ -2,7 +2,7 @@ const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 function groupSimilar() {
   for (let i = 10; i--; ) console.log('similar');
 }
-async function openWindow(s) {
+async function openWindow(s = 0) {
   const button = document.querySelector(`#openWindow${s}`);
   const originText = button.textContent;
   for (let i = s; i--; ) {
