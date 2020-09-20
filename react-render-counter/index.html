@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>React Render Counter</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1 class="main-title">React Render Counter</h1>
+    <section>
+      <h2>Open your Console</h2>
+      <pre><code></code></pre>
+    </section>
+    <div id="root"></div>
+    <script type="text/babel">
+      function RenderCounter() {
+        const [count, setCount] = React.useState(0);
+        const [count2, setCount2] = React.useState(0);
+        const [asyncCount, setAsyncCount] = React.useState(0);
+        const [asyncCount2, setAsyncCount2] = React.useState(0);
+        const onClick = () => {
+          console.countReset('render count'); // 計算前先把 'render' 歸零
+          setCount(count + 1); // 1
+          setCount2(count2 + 1); // 1
+          Promise.resolve().then(() => {
+            setAsyncCount(asyncCount + 1); // 2
+            setAsyncCount2(asyncCount2 + 1); // 3
+          });
+        };
+        console.count('render count');
+        return <button onClick={onClick}>Click Count: {count}</button>;
+      }
+      ReactDOM.render(<RenderCounter />, document.getElementById('root'));
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
