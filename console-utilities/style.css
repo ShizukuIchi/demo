@@ -4,17 +4,18 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: monospace;
 }
 .main-title {
-  margin: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 section {
+  padding: 20px;
   font-size: 16px;
   width: 700px;
   max-width: 100%;
