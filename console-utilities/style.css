@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+}
+.main-title {
+  margin: 30px;
+  text-align: center;
+}
+section {
+  font-size: 16px;
+  width: 700px;
+  max-width: 100%;
+}
+
+code:not(.html) {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.emojis {
+  position: relative;
+  height: 44px;
+}
+.emojis:hover .emoji:nth-child(1) {
+  visibility: hidden;
+}
+.emojis:hover .emoji:nth-child(2) {
+  visibility: visible;
+}
+.emoji {
+  font-size: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+.emoji:nth-child(1) {
+  visibility: visible;
+}
+.emoji:nth-child(2) {
+  visibility: hidden;
+}
+.cat-container {
+  display: flex;
+  align-items: center;
+}
+.cat {
+  font-size: 32px;
+  cursor: pointer;
+}

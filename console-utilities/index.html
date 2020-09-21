@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Console - Utilities</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1 class="main-title">Console - Utilities</h1>
+    <section>
+      <h2>$, $$</h2>
+      <div>
+        <code>for (let btn of $$('.btn')) console.log(btn.textContent)</code>
+      </div>
+      <br />
+      <button class="btn" onclick="onClickBtn(event)">Hello</button>
+      <button class="btn" onclick="onClickBtn(event)">World!</button>
+      <h2>debug</h2>
+      <div>
+        <code>debug(onClickDebugBtn)</code>
+      </div>
+      <br />
+      <div>
+        在 Console 輸入後按下按鈕來觸發 Debugger ->
+        <button onclick="onClickDebugBtn()">Debug</button>
+      </div>
+      <h2>monitor</h2>
+      <div>
+        <code>monitor(echo)</code>
+      </div>
+      <br />
+      <div>
+        開始後每秒執行一次 echo(performance.now()) ->
+        <button onclick="onClickMonitorBtn(event)">
+          Start
+        </button>
+      </div>
+      <h2>monitorEvents</h2>
+      <div class="emojis">
+        <div class="emoji">😀</div>
+        <div class="emoji">😍</div>
+      </div>
+      <br />
+      <div>
+        <code>monitorEvents($('.emojis'), ['mouseenter','mouseleave'])</code>
+      </div>
+      <br />
+      <div>
+        <code>unmonitorEvents($('.emojis'), ['mouseenter','mouseleave'])</code>
+      </div>
+      <h2>getEventListeners</h2>
+      <div><code>getEventListeners($('.cat'))</code></div>
+      <br />
+      <div class="cat-container">
+        <span class="cat" onclick="meow()">🐱</span><span id="meow"></span>
+      </div>
+      <h2>copy</h2>
+      <div>
+        <code>fetch('meow.json').then((r) => r.json()).then(copy)</code>
+      </div>
+    </section>
+  </body>
+</html>
