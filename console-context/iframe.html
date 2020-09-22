@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        background: rgba(0, 0, 0, 0.08);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <title>Console - iframe</title>
+  </head>
+  <body>
+    <div>
+      Hi I am iframe
+    </div>
+    <script>
+      const foo = 'Variable declared in iframe.';
+      window.onmessage = (event) => {
+        console.log('Main -> iframe:', event.data);
+        document.querySelector('div').textContent = event.data;
+        event.source.postMessage('Can you access "foo"?');
+      };
+    </script>
+  </body>
+</html>

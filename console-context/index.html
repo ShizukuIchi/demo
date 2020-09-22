@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Console - Context</title>
+  </head>
+  <body>
+    <h1 class="main-title">Console - Context</h1>
+    <section>
+      <h2>iframe</h2>
+      <div>Hover Context 選單裡面的 iframe 會看到下方藍藍的。</div>
+      <br />
+      <div>
+        <input
+          type="text"
+          id="message"
+          placeholder="Message"
+          value="Hello World from Main!"
+        />
+        <button id="send">Send message</button>
+      </div>
+      <br />
+      <iframe src="iframe.html" frameborder="0"></iframe>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
