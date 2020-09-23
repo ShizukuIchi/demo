@@ -3,17 +3,12 @@
 *::after {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-}
 body {
   margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: monospace;
-  overflow: hidden;
 }
 .main-title {
   margin: 30px;
