@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sources - Workspace</title>
+  </head>
+  <body>
+    <a href="https://github.com/ShizukuIchi/demo" class="github">
+      <img src="https://i.imgur.com/wxyS81w.png" alt="github" />
+    </a>
+    <h1 class="main-title">Sources - Workspace</h1>
+    <section>
+      <h2>Filesystem</h2>
+      <div>1. <a href="demo.zip">點此下載測試頁面檔案</a></div>
+      <div>2. 解壓縮後在資料夾內執行 <code>npx serve .</code></div>
+      <div>
+        3. 瀏覽器開啟 <code>localhost:5000</code>，打開 DevTools > Sources >
+        Filesystem
+      </div>
+      <div>
+        4. 將下載的資料夾拖入 Filesystem，點擊上方的「Allow」，檔名旁會有綠點
+      </div>
+      <div>
+        5. 修改有綠點的
+        <code>index.html</code>、<code>style.css</code>、<code>index.js</code>
+        並存檔就會同步變化
+      </div>
+      <h2>Overrides</h2>
+      <div>1. 打開 DevTools > Sources > Overrides</div>
+      <div>
+        2. 點擊
+        <code>+ Select folder for overrides</code>，選一個資料夾來儲存改動
+      </div>
+      <div>3. 點擊上方的「Allow」，開始編輯各個檔案</div>
+      <div>4. 存檔後看到紫色圓點，就可以重新整理頁面來看看結果</div>
+      <br />
+      <h3>Console Messages</h3>
+      <div class="message-container"></div>
+    </section>
+    <script src="index.js"></script>
+    <script src="log.js"></script>
+  </body>
+</html>

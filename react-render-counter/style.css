@@ -10,6 +10,20 @@ body {
   align-items: center;
   font-family: monospace;
 }
+.github {
+  display: flex;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+}
+.github img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.5s;
+}
+.github:hover img {
+  transform: scale(1.1) rotate(10deg);
+}
 .main-title {
   margin: 30px;
   text-align: center;

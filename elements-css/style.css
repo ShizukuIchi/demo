@@ -2,6 +2,20 @@ body {
   height: 100vh;
   margin: 0;
 }
+.github {
+  display: flex;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+}
+.github img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.5s;
+}
+.github:hover img {
+  transform: scale(1.1) rotate(10deg);
+}
 .container {
   height: 100%;
   display: flex;
