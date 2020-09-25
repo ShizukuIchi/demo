@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sources - Breakpoints</title>
+  </head>
+  <body>
+    <a href="https://github.com/ShizukuIchi/demo" class="github">
+      <img src="https://i.imgur.com/wxyS81w.png" alt="github" />
+    </a>
+    <h1 class="main-title">
+      Sources - Breakpoints
+    </h1>
+    <section>
+      <div>以下行號將以冒號表示，例如 <code>index.js:2</code> 代表第二行。</div>
+      <h2>標記</h2>
+      <div>
+        點擊 <code>index.js:2</code> 的行號插入斷點，會看到很多個標籤。
+        <button onclick="line()">GO</button>
+      </div>
+      <br />
+      <div>
+        <code>
+          console.log(conCat(createArray(10).map((_, i) => i + 1)));
+        </code>
+      </div>
+      <h2>DOM</h2>
+      <div id="dom">Who is changing my color?</div>
+      <h2>XHR/Fetch</h2>
+      <div>
+        Get messages from cat and dogs.
+        <button onclick="catAndDogs()">GO</button>
+      </div>
+      <h2>Event listener</h2>
+      <div class="dropdown">
+        <input type="text" value="" placeholder="Choose your favorite emoji" />
+        <div class="list">
+          <div class="item">🐱</div>
+          <div class="item">😺</div>
+          <div class="item">😸</div>
+        </div>
+      </div>
+      <h2>Exception</h2>
+      <div>
+        Click me to throw an
+        <button onclick="throw 'error'">ERROR</button>
+      </div>
+      <h3>Console Messages</h3>
+      <div class="message-container"></div>
+    </section>
+    <script src="log.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
