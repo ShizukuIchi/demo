@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sources - Step-by-Step Execution</title>
+  </head>
+  <body>
+    <a href="https://github.com/ShizukuIchi/demo" class="github">
+      <img src="https://i.imgur.com/wxyS81w.png" alt="github" />
+    </a>
+    <h1 class="main-title">
+      Sources - Step-by-Step Execution
+    </h1>
+    <section>
+      <h2>Step</h2>
+      <div>
+        打開 DevTools > Sources > Page，在
+        <code>index.js</code> 第三行加入斷點。
+      </div>
+      <br />
+      <div>👉 <code>const result = double(number);</code></div>
+      <br />
+      <div>
+        暫停後試試下方三種 Step 按鈕 ->
+        <button onclick="startStep()">GO</button>
+      </div>
+      <ul>
+        <li>Step over next function call</li>
+        <li>Step into next function call</li>
+        <li>Step out of current function</li>
+      </ul>
+      <h2>Asynchronous</h2>
+      <div>在 <code>index.js</code> 第十三行加入斷點。</div>
+      <br />
+      <div>👉 <code>setTimeout(() => console.log(1));</code></div>
+      <br />
+      <div>
+        暫停後試試下方兩種 Step 按鈕 ->
+        <button onclick="startStepAsync()">GO</button>
+      </div>
+      <ul>
+        <li>Step into next function call</li>
+        <li>Step</li>
+      </ul>
+      <h2>Threads</h2>
+      <div>在 <code>index.js</code> 第十九行加入斷點。</div>
+      <br />
+      <div>👉 <code>new Worker('worker.js');</code></div>
+      <br />
+      <div>
+        暫停後試試下方兩種 Step 按鈕 ->
+        <button onclick="startStepThreads()">GO</button>
+      </div>
+      <ul>
+        <li>Step into next function call</li>
+        <li>Step</li>
+      </ul>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
