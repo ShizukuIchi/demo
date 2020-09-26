@@ -16,6 +16,6 @@ function startStepAsync() {
 }
 
 function startStepThreads() {
-  new Worker('worker.js');
-  console.log('Hello World!');
+  new Worker('worker.js'); // A
+  console.log('Hello World!'); // B
 }
