@@ -18,3 +18,4 @@
 - [[Day 11] Sources - Navigator & Workspace](https://ithelp.ithome.com.tw/articles/10243538)
 - [[Day 12] Sources - Breakpoints](https://ithelp.ithome.com.tw/articles/10244199)
 - [[Day 13] Sources - Step-by-Step Execution](https://ithelp.ithome.com.tw/articles/10244199)
+- [[Day 14] Sources - JavaScript Debugging](https://ithelp.ithome.com.tw/articles/10245161)
