@@ -21,3 +21,6 @@
 - [[Day 14] Sources - JavaScript Debugging](https://ithelp.ithome.com.tw/articles/10245161)
 - [[Day 15] Network - Overview & Settings](https://ithelp.ithome.com.tw/articles/10245891)
 - [[Day 16] Network - Filter & Search Requests](https://ithelp.ithome.com.tw/articles/10246590)
+- [[Day 17] Network - Analyze Requests](https://ithelp.ithome.com.tw/articles/10247206)
+- [[Day 18] Performance - Overview](https://ithelp.ithome.com.tw/articles/10247709)
+- [[Day 19] Performance - Web Vitals](https://ithelp.ithome.com.tw/articles/10248039)
