@@ -25,3 +25,5 @@
 - [[Day 18] Performance - Overview](https://ithelp.ithome.com.tw/articles/10247709)
 - [[Day 19] Performance - Web Vitals](https://ithelp.ithome.com.tw/articles/10248039)
 - [[Day 20] Performance - Critical Rendering Path](https://ithelp.ithome.com.tw/articles/10248286)
+- [[Day 21] Performance - How Rendering Works](https://ithelp.ithome.com.tw/articles/10248720)
+- [[Day 22] Performance - Rendering Optimization](https://ithelp.ithome.com.tw/articles/10249554)
