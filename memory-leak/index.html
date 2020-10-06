@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Leak</title>
+  </head>
+  <body>
+    <a href="https://github.com/ShizukuIchi/demo" class="github">
+      <img src="https://i.imgur.com/wxyS81w.png" alt="github" />
+    </a>
+    <h1 class="main-title">
+      Memory Leak
+    </h1>
+    <div>按下 GO 按鈕後到 Performance 面板按下 Collect garbage 來強制 GC。</div>
+    <section>
+      <h2>Create Array</h2>
+      <div>
+        打開 DevTools Drawer 內的 Performance monitor，搭配 GC 看看 JS heap size
+        的變化。
+      </div>
+      <br />
+      <div>只建立 Array -> <button onclick="createArray()">GO</button></div>
+      <pre class="js" id="array"></pre>
+      <div>
+        新建 Array 且用變數儲存 -> <button onclick="appendArray()">GO</button>
+      </div>
+      <pre class="js" id="appendArr"></pre>
+      <div>清掉 Array -> <button onclick="clearArray()">GO</button></div>
+      <pre class="js" id="clearArr"></pre>
+      <br />
+    </section>
+    <section>
+      <h2>Create DOM</h2>
+      <div>
+        搭配 GC 看看 DOM Nodes 的變化。
+      </div>
+      <br />
+      <div>只建立元素 -> <button onclick="createDOM()">GO</button></div>
+      <pre class="js" id="DOM"></pre>
+      <div>
+        新建元素且用變數儲存 -> <button onclick="appendDOM()">GO</button>
+      </div>
+      <pre class="js" id="appendDOM"></pre>
+      <div>移除元素 -> <button onclick="removeDOM()">GO</button></div>
+      <pre class="js" id="removeDOM"></pre>
+      <div>清除元素和變數 -> <button onclick="clearDOM()">GO</button></div>
+      <pre class="js" id="clearDOMVariable"></pre>
+      <br />
+      <h3>DOM container</h3>
+      <div class="dom-container"></div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

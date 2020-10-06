@@ -29,19 +29,19 @@ function blackbox() {
 
 (function() {
   document.querySelector('#scope').textContent = `var a = 'a';
-  const b = 'b';
-  function outer() {
-    const c = 'c';
-    function inner() {
-      const d = 'd';
-      if (true) {
-        const e = 'e';
-        console.log(a, b, c, d, e); // 👈
-      }
+const b = 'b';
+function outer() {
+  const c = 'c';
+  function inner() {
+    const d = 'd';
+    if (true) {
+      const e = 'e';
+      console.log(a, b, c, d, e); // 👈
     }
-    inner();
   }
-  outer();`;
+  inner();
+}
+outer();`;
   document.querySelector('#callStack').textContent = hello;
   document.querySelector('#blackbox').textContent = blackbox;
 })();
