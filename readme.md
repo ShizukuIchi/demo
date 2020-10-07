@@ -29,3 +29,4 @@
 - [[Day 22] Performance - Rendering Optimization](https://ithelp.ithome.com.tw/articles/10249554)
 - [[Day 23] Performance - Analyze Paint & Layers](https://ithelp.ithome.com.tw/articles/10249933)
 - [[Day 24] Performance - Analyze Memory](https://ithelp.ithome.com.tw/articles/10250174)
+- [[Day 25] Performance - Analyze Runtime Activities](https://ithelp.ithome.com.tw/articles/10250669)
