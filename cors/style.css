@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+}
+.github {
+  display: flex;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+}
+.github img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.5s;
+}
+.github:hover img {
+  transform: scale(1.1) rotate(10deg);
+}
+.main-title {
+  margin: 30px;
+  text-align: center;
+}
+section {
+  font-size: 16px;
+  width: 700px;
+  max-width: 100%;
+}
+code {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 0 6px;
+  border-radius: 2px;
+}
+canvas {
+  background: black;
+}

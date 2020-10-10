@@ -30,3 +30,5 @@
 - [[Day 23] Performance - Analyze Paint & Layers](https://ithelp.ithome.com.tw/articles/10249933)
 - [[Day 24] Performance - Analyze Memory](https://ithelp.ithome.com.tw/articles/10250174)
 - [[Day 25] Performance - Analyze Runtime Activities](https://ithelp.ithome.com.tw/articles/10250669)
+- [[Day 26] Cookies - SameSite Attribute](https://ithelp.ithome.com.tw/articles/10251288)
+- [[Day 27] Cross-Origin Resource Sharing (CORS)](https://ithelp.ithome.com.tw/articles/10251693/)
