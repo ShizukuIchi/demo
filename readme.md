@@ -32,3 +32,4 @@
 - [[Day 25] Performance - Analyze Runtime Activities](https://ithelp.ithome.com.tw/articles/10250669)
 - [[Day 26] Cookies - SameSite Attribute](https://ithelp.ithome.com.tw/articles/10251288)
 - [[Day 27] Cross-Origin Resource Sharing (CORS)](https://ithelp.ithome.com.tw/articles/10251693/)
+- [[Day 28] Device Simulation & Remote Debugging](https://ithelp.ithome.com.tw/articles/10252037/)
