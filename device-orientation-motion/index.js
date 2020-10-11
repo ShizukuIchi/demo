@@ -30,7 +30,9 @@ function listenOrientation() {
 function listenMotion() {
   if (DeviceMotionEvent) {
     function handleDeviceMotion(event) {
-      const { x, y, z } = event.acceleration;
+      const acceleration =
+        event.acceleration || event.accelerationIncludingGravity;
+      const { x, y, z } = acceleration;
       ax.textContent = `${x} m/s2`;
       ay.textContent = `${y} m/s2`;
       az.textContent = `${z} m/s2`;
