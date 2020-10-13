@@ -33,3 +33,5 @@
 - [[Day 26] Cookies - SameSite Attribute](https://ithelp.ithome.com.tw/articles/10251288)
 - [[Day 27] Cross-Origin Resource Sharing (CORS)](https://ithelp.ithome.com.tw/articles/10251693/)
 - [[Day 28] Device Simulation & Remote Debugging](https://ithelp.ithome.com.tw/articles/10252037/)
+- [[Day 29] Optimize images](https://ithelp.ithome.com.tw/articles/10252501/)
+- [[Day 30] Tips for Lazy Loading Images](https://ithelp.ithome.com.tw/articles/10252723/)
