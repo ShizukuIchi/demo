@@ -1,4 +1,4 @@
-# 你所不知道的前端 Debug 技巧
+# 你所不知道的各種前端 Debug 技巧
 
 第 12 屆 iT 邦幫忙鐵人賽系列文章 Demo 網站。  
 👉 [Demo 網站連結](https://sh1zuku.csie.io/demo)
