@@ -35,3 +35,10 @@
 - [[Day 28] Device Simulation & Remote Debugging](https://ithelp.ithome.com.tw/articles/10252037/)
 - [[Day 29] Optimize images](https://ithelp.ithome.com.tw/articles/10252501/)
 - [[Day 30] Tips for Lazy Loading Images](https://ithelp.ithome.com.tw/articles/10252723/)
+
+---
+
+本系列文章經重新編排，並加入更多內容及範例後已整理成冊《你所不知道的必學前端 Debug 技巧》，若有興趣請參考下方連結：  
+https://www.tenlong.com.tw/products/9789864348954  
+[![你所不知道的必學前端 Debug 技巧](https://ithelp.ithome.com.tw/upload/images/20211011/20129636YiIhzK6Iru.jpg)](https://www.tenlong.com.tw/products/9789864348954)  
+相信能夠幫助讀者提升問題解決能力和開發效率！
